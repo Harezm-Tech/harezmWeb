@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Animated Template</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/8d9600f1af.js" crossorigin="anonymous"></script>
+  <!-- AoS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Tailwind Library -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class=" sticky top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+    style="background-color: rgb(209, 213, 219);">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+      <!-- Nav Left Side -->
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a class="leading-relaxed inline-block mr-4 whitespace-no-wrap" href="index.html">
+          <!-- Nav Title -->
+          <img class="h-12 w-50" src="harezmLogo.png" alt="">
+        </a>
+        <!-- Hamburger Menu (Mobile) -->
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button" onclick="toggleNavbar('collapse-navbar')">
+          <!-- Icon -->
+          <i class="text-black fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Nav Right Side -->
+      <div class="lg:flex flex-grow items-center rounded-md lg:bg-transparent lg:shadow-none hidden"
+        id="collapse-navbar">
+        <ul class="flex flex-col lg:flex lg:flex-row list-none lg:ml-auto">
+          <li class="flex items-center">
+            <!-- Services Button -->
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="click"
+              class="sm:text-black focus:outline-none font-semibold text-md px-5 py-2.5 text-center inline-flex items-center"
+              type="button">Services<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div id="dropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 font-semibold text-sm text-black dark:text-gray-200"
+                aria-labelledby="dropdownHoverButton">
+                <li>
+                  <a href="#consultancy"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">SAP
+                    Consultancy</a>
+                </li>
+                <li>
+                  <a href="#inflationaccounting"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Inflation
+                    Accounting Solutions</a>
+                </li>
+                <li>
+                  <a href="#blockchaindevelopment"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Blockchain
+                    Development</a>
+                </li>
+                <li>
+                  <a href="#fintechconsultancy"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Fintech
+                    Solutions</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Solutions Button -->
+          <li class="flex items-center">
+            <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="250"
+              data-dropdown-trigger="click"
+              class="focus:outline-none font-semibold text-md px-5 py-2.5 text-center inline-flex items-center">Solutions
+              <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownDelay"
+              class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-50 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-black dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="solutions.html#vatrefund" class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">VAT
+                    Refund Declaration</a>
+                </li>
+                <li>
+                  <a href="solutions.html#accreceipt"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">e-Accounting
+                    Receipt</a>
+                </li>
+                <li>
+                  <a href="solutions.html#accoverview"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">e-Account
+                    Overview</a>
+                </li>
+                <li>
+                  <a href="solutions.html#reconciliation"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">e-Reconciliation</a>
+                </li>
+                <li>
+                  <a href="solutions.html#payment"
+                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">e-Payment</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Contact Us Button -->
+          <li class="flex items-center">
+            <a href="#contact">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-2 rounded ml-4 w-full">
+                Contact Us
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- End of Navigation -->
+
+  <!-- Splash Page -->
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+      <!-- Background Image -->
+      <div class="absolute top-0 w-full h-full bg-cover bg-center"
+        style="background-image: url(https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+        <!-- Overlay -->
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <!-- Text Over Main Background -->
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+                Harezm Tech Services
+              </h1>
+              <p class="mt-4 text-lg text-white" data-aos="fade-right" data-aos-delay="1300">
+                Explore the range of SAP services we provide, including consultancy, implementation, customization, and
+                support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Making Polygon Shape in Background -->
+      <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg> <!-- 2560 0 2560 100 0 100-->
+      </div>
+    </div>
+    <!-- End of Splash Page -->
+
+    <!-- Services Section -->
+    <section class="bg-gray-300 px-12">
+      <!-- Text Box -->
+      <div id="consultancy" class="flex flex-wrap items-center pt-24">
+        <!-- Text Box Container -->
+        <div class="lg:w-full md:w-5/12 mr-auto ml-auto" data-aos="zoom-in-right">
+          <!-- Text Box -->
+          <h3 class="text-3xl mb-2 font-semibold leading-normal">
+            SAP Consultancy
+          </h3>
+          <p class="text-lg text-gray-800">
+            From analyzing and detecting process inefficiencies to implementing SAP Cloud Solutions, Financial
+            Management, Supply Chain Management, and beyond, we ensure your business operates at peak efficiency while
+            adhering to the highest standards.
+          </p>
+          <p class="mt-2 font-bold">
+            Unlock the full potential of your SAP systems with our comprehensive consultancy services:
+          </p>
+          <ul style="list-style: circle;">
+            <li class="ml-6">SAP Cloud Solutions</li>
+            <li class="ml-6">SAP Financial Management</li>
+            <li class="ml-6">SAP Supply Chain Management</li>
+            <li class="ml-6">SAP Enterprise Portal Applications</li>
+            <li class="ml-6">SAP Budget Planning Consolidation</li>
+            <li class="ml-6">SAP ABAP</li>
+            <li class="ml-6">SAP Logistics Modules Consultancy</li>
+            <li class="ml-6">SAP Finance Modules Consultancy</li>
+            <li class="ml-6">Application Consultancy</li>
+            <li class="ml-6">Technical Consultancy</li>
+            <li class="ml-6">Application Development Consultancy</li>
+            <li class="ml-6">Localization</li>
+            <li class="ml-6">Dissemination (Roll-Out)</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Text Box -->
+      <div id="inflationaccounting" class="flex flex-wrap items-center pt-20">
+        <!-- Text Box Container -->
+        <div class="lg:w-full md:w-5/12 mr-auto ml-auto" data-aos="zoom-in-right">
+          <!-- Text Box -->
+          <h3 class="text-3xl mb-2 font-semibold leading-normal">
+            Inflation Accounting Solutions
+          </h3>
+          <p class="text-lg text-gray-800">
+            Navigate inflationary pressures with confidence using our specialized inflation accounting solutions. </br>
+            By accurately restating financial statements and complying with regulatory requirements, we provide
+            investors with a clearer picture of your financial health in inflation-prone economies.
+          </p>
+        </div>
+      </div>
+      <!-- Text Box -->
+      <div id="blockchaindevelopment" class="flex flex-wrap items-center pt-20">
+        <!-- Text Box Container -->
+        <div class="lg:w-full md:w-5/12 mr-auto ml-auto" data-aos="zoom-in-right">
+          <!-- Text Box -->
+          <h3 class="text-3xl mb-2 font-semibold leading-normal">
+            Blockchain Development
+          </h3>
+          <p class="text-lg text-gray-800">
+            Explore the future of secure and decentralized transactions with our expert blockchain development services.
+            </br>
+            Whether you're looking to enhance transparency, streamline operations, or revolutionize your industry, our
+            customized blockchain solutions are designed to meet your unique business objectives.
+          </p>
+        </div>
+      </div>
+      <!-- Text Box -->
+      <div id="fintechconsultancy" class="flex flex-wrap items-center py-20">
+        <!-- Text Box Container -->
+        <div class="lg:w-full md:w-5/12 mr-auto ml-auto" data-aos="zoom-in-right">
+          <!-- Text Box -->
+          <h3 class="text-3xl mb-2 font-semibold leading-normal">
+            Fintech Solutions
+          </h3>
+          <p class="text-lg text-gray-800">
+            Stay ahead of the curve with our top-notch financial technology services. </br>
+            From VAT Refund Declaration to e-Payment automation, our fintech solutions are engineered to optimize
+            processes, drive growth and maximize your bottom line.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- End of Services Section -->
+
+    <!-- Contact Form -->
+    <section id="contact" class="relative block py-24 bg-gray-900">
+      <!-- Making Polygon Shape in Background -->
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-900 border-b-gray-900 fill-current" points="0 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <!-- Container -->
+      <div class="container mx-auto px-4" data-aos="fade-in">
+        <div class="flex flex-wrap justify-center">
+          <div class="lg:w-6/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-2xl font-semibold">Ready to Elevate Your Business?</h4>
+                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                  Contact Us Now!
+                </p>
+                <!-- Name -->
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                    Full Name
+                  </label><input type="text"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Full Name" style="transition: all 0.15s ease 0s;" required />
+                </div>
+                <!-- Email -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                    Email
+                  </label><input type="email"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Email" style="transition: all 0.15s ease 0s;" required />
+                </div>
+                <!-- Message -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                    Message
+                  </label><textarea rows="4" cols="80"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Type a message..." required></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button" style="transition: all 0.15s ease 0s;">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <!-- Making Polygon Shape in Background -->
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0);">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <!-- Section Container -->
+    <div class="container mx-auto px-4">
+      <!-- Text Box Container -->
+      <div class="mx-auto md:w-6/12 px-4 flex flex-col">
+        <h4 class="mx-auto text-3xl font-semibold">Let's keep in touch!</h4>
+        <h5 class="flex justify-center text-lg text-gray-700">
+          Find us on any of these platforms.
+        </h5>
+        <!-- Social Media Buttons -->
+        <div class="mx-auto mt-6">
+          <a href="https://twitter.com/Harezm_tech" target="_blank"><i
+              class="fab fa-x-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61557687912501" target="_blank"><i
+              class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          <a href="https://www.linkedin.com/company/harezm/" target="_blank"><i
+              class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          <a href="https://tr.pinterest.com/harezm_tech/" target="_blank"><i
+              class="fab fa-pinterest bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          <a href="https://www.instagram.com/harezm_tech/" target="_blank"><i
+              class="fab fa-instagram bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          <a href="https://www.tiktok.com/@harezm_tech?lang=en" target="_blank"><i
+              class="fab fa-tiktok bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+<!-- AoS js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+<!-- Navigation Script -->
+<script src="navScript.js"></script>
+
+</html>
