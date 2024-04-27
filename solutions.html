@@ -27,7 +27,7 @@
             <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                 <a class="leading-relaxed inline-block mr-4 whitespace-no-wrap" href="index.html">
                     <!-- Nav Title -->
-                    <img class="h-12 w-50 rounded-full " src="harezmLogo.png" alt="">
+                    <img class="h-12 w-50" src="harezmLogo.png" alt="">
                 </a>
                 <!-- Hamburger Menu (Mobile) -->
                 <button
@@ -250,52 +250,63 @@
         <!-- End of Services Section -->
 
         <!-- Contact Form -->
-        <form id="contact" method="post" class="gform relative block py-24 lg:pt-0 bg-gray-900" action="https://script.google.com/macros/s/AKfycbx9TRU0s6KaOLDpJ4Di1GmCJpPB38QHf_175z9DPaUWZbIMVBhLY9MNYW_RDaBcWpmD/exec">
-      <!-- Container -->
-      <div class="container mx-auto px-4" data-aos="fade-in">
-        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-          <div class="lg:w-6/12 px-4">
-            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-              <div class="flex-auto p-5 lg:p-10">
-                <h4 class="text-2xl font-semibold">Ready to Elevate Your Business?</h4>
-                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                  Contact Us Now!
-                </p>
-                <!-- Name -->
-                <div class="relative w-full mb-3 mt-8">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
-                    Full Name
-                  </label><input type="text" name="name"
-                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                    placeholder="Full Name" style="transition: all 0.15s ease 0s;" required />
-                </div>
-                <!-- Email -->
-                <div class="relative w-full mb-3">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
-                    Email
-                  </label><input type="email" name="email"
-                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                    placeholder="Email" style="transition: all 0.15s ease 0s;" required />
-                </div>
-                <!-- Message -->
-                <div class="relative w-full mb-3">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
-                    Message
-                  </label><textarea rows="4" cols="80" name="message"
-                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                    placeholder="Type a message..." required></textarea>
-                </div>
-                <div class="text-center mt-6">
-                  <input type="submit" name="submit" value="Send Message"
-                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                    type="button" style="transition: all 0.15s ease 0s;">
-                </div>
-              </div>
+        <section id="contact" class="relative block py-24 bg-gray-900">
+            <!-- Making Polygon Shape in Background -->
+            <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+                style="height: 80px; transform: translateZ(0);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-900 border-b-gray-900 fill-current" points="0 0 2560 100 0 100"></polygon>
+                </svg>
             </div>
-          </div>
-        </div>
-      </div>
-    </form>
+            <!-- Container -->
+            <div class="container mx-auto px-4" data-aos="fade-in">
+                <div class="flex flex-wrap justify-center">
+                    <div class="lg:w-6/12 px-4">
+                        <div
+                            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+                            <div class="flex-auto p-5 lg:p-10">
+                                <h4 class="text-2xl font-semibold">Ready to Elevate Your Business?</h4>
+                                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                                    Contact Us Now!
+                                </p>
+                                <!-- Name -->
+                                <div class="relative w-full mb-3 mt-8">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                                        Full Name
+                                    </label><input type="text"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Full Name" style="transition: all 0.15s ease 0s;" required />
+                                </div>
+                                <!-- Email -->
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                                        Email
+                                    </label><input type="email"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Email" style="transition: all 0.15s ease 0s;" required />
+                                </div>
+                                <!-- Message -->
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                                        Message
+                                    </label><textarea rows="4" cols="80"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Type a message..." required></textarea>
+                                </div>
+                                <div class="text-center mt-6">
+                                    <button
+                                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                        type="button" style="transition: all 0.15s ease 0s;">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- End of Contact Section -->
     </main>..
 
@@ -315,30 +326,28 @@
             <div class="mx-auto md:w-6/12 px-4 flex flex-col">
                 <h4 class="mx-auto text-3xl font-semibold">Let's keep in touch!</h4>
                 <h5 class="flex justify-center text-lg text-gray-700">
-                    info@harezm.com
+                    Find us on any of these platforms.
                 </h5>
                 <!-- Social Media Buttons -->
                 <div class="mx-auto mt-6">
                     <a href="https://twitter.com/Harezm_tech" target="_blank"><i
-                        class="fab fa-x-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                            class="fab fa-x-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61557687912501" target="_blank"><i
-                        class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                            class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
                     <a href="https://www.linkedin.com/company/harezm/" target="_blank"><i
-                        class="fab fa-linkedin bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                            class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
                     <a href="https://tr.pinterest.com/harezm_tech/" target="_blank"><i
-                        class="fab fa-pinterest bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                            class="fab fa-pinterest bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
                     <a href="https://www.instagram.com/harezm_tech/" target="_blank"><i
-                        class="fab fa-instagram bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                            class="fab fa-instagram bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
                     <a href="https://www.tiktok.com/@harezm_tech?lang=en" target="_blank"><i
-                        class="fab fa-tiktok bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-                  </div>
+                            class="fab fa-tiktok bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                </div>
             </div>
         </div>
     </footer>
     <!-- End of Footer Section -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-  <script data-cfasync="false" type="text/javascript" src="formSubmissionHandler.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 
 <!-- AoS js-->
