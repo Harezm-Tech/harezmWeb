@@ -5,3 +5,21 @@ AOS.init({
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   });
+
+const submitButton = document.getElementById("submitButton");
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+const errorMsg = document.getElementById("errorMsg");
+const successMsg = document.getElementById("thank_you");
+
+submitButton.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (fullName.value === "" && email.value === "" && message.value === "") {
+    errorMsg.style.display = 'block';
+  } else {
+    errorMsg.style.display = 'none';
+    successMsg.style.display = 'block';
+  }
+});
