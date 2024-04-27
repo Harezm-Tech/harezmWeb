@@ -301,7 +301,7 @@
         style="height: 80px; transform: translateZ(0);">
         <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
           version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-          <polygon class="text-gray-900 border-b-gray-900 fill-current" points="0 0 2560 100 0 100"></polygon>
+          <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
       <!-- Section Container -->
@@ -387,7 +387,7 @@
     </section>
 
     <!-- Contact Form -->
-    <form id="contact" method="post" class="gform relative block py-24 lg:pt-0 bg-gray-900"
+    <form id="contact" method="post" class="gform relative block py-24 bg-gray-900"
       action="https://script.google.com/macros/s/AKfycbx-BInZG5BizBWJbBV1MT2Jp6GH8uyy98OxWvlqGcDOhK7oRMlO57L_IJafTJ6pAOXn/exec">
       <!-- Container -->
       <div class="container mx-auto px-4" data-aos="fade-in">
@@ -403,7 +403,7 @@
                 <div class="relative w-full mb-3 mt-8">
                   <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
                     Full Name
-                  </label><input type="text" name="name" id="name"
+                  </label><input type="text" id="name" name="name"
                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                     placeholder="Full Name" style="transition: all 0.15s ease 0s;" required />
                 </div>
@@ -411,7 +411,7 @@
                 <div class="relative w-full mb-3">
                   <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
                     Email
-                  </label><input type="email" name="email" id="email"
+                  </label><input type="email" id="email" name="email"
                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                     placeholder="Email" style="transition: all 0.15s ease 0s;" required />
                 </div>
@@ -419,7 +419,7 @@
                 <div class="relative w-full mb-3">
                   <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
                     Message
-                  </label><textarea rows="4" cols="80" name="message" id="message"
+                  </label><textarea rows="4" cols="80" id="message" name="message"
                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                     placeholder="Type a message..." required></textarea>
                 </div>
@@ -428,10 +428,11 @@
                   <p class="font-bold text-l flex justify-center">Thank you for contacting us.</p>
                 </div>
                 <div id="errorMsg" style="display: none;">
-                  <p class="text-red-700 font-bold text-2xl flex justify-center">Please fill in the above boxes to contact us!</p>
+                  <p class="text-red-700 font-bold text-2xl flex justify-center">Please fill in all the boxes above to
+                    contact us!</p>
                 </div>
                 <div class="text-center mt-6">
-                  <button type="submit" name="submit" value="Send Message" id="submitButton"
+                  <button type="submit" id="submit" name="submit" value="Send Message"
                     class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                     type="button" style="transition: all 0.15s ease 0s;">
                     Send Message
