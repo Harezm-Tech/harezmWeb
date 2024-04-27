@@ -387,7 +387,8 @@
     </section>
 
     <!-- Contact Form -->
-    <form id="contact" method="post" class="gform relative block py-24 lg:pt-0 bg-gray-900" action="https://script.google.com/macros/s/AKfycbx-BInZG5BizBWJbBV1MT2Jp6GH8uyy98OxWvlqGcDOhK7oRMlO57L_IJafTJ6pAOXn/exec">
+    <form id="contact" method="post" class="gform relative block py-24 lg:pt-0 bg-gray-900"
+      action="https://script.google.com/macros/s/AKfycbx-BInZG5BizBWJbBV1MT2Jp6GH8uyy98OxWvlqGcDOhK7oRMlO57L_IJafTJ6pAOXn/exec">
       <!-- Container -->
       <div class="container mx-auto px-4" data-aos="fade-in">
         <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
@@ -402,7 +403,7 @@
                 <div class="relative w-full mb-3 mt-8">
                   <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
                     Full Name
-                  </label><input type="text" name="name"
+                  </label><input type="text" name="name" id="name"
                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                     placeholder="Full Name" style="transition: all 0.15s ease 0s;" required />
                 </div>
@@ -410,7 +411,7 @@
                 <div class="relative w-full mb-3">
                   <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
                     Email
-                  </label><input type="email" name="email"
+                  </label><input type="email" name="email" id="email"
                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                     placeholder="Email" style="transition: all 0.15s ease 0s;" required />
                 </div>
@@ -418,14 +419,23 @@
                 <div class="relative w-full mb-3">
                   <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
                     Message
-                  </label><textarea rows="4" cols="80" name="message"
+                  </label><textarea rows="4" cols="80" name="message" id="message"
                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                     placeholder="Type a message..." required></textarea>
                 </div>
+                <div id="thank_you" style="display: none;">
+                  <p class="font-bold text-2xl flex justify-center">Your message is sent!</p>
+                  <p class="font-bold text-l flex justify-center">Thank you for contacting us.</p>
+                </div>
+                <div id="errorMsg" style="display: none;">
+                  <p class="text-red-700 font-bold text-2xl flex justify-center">Please fill in the above boxes to contact us!</p>
+                </div>
                 <div class="text-center mt-6">
-                  <input type="submit" name="submit" value="Send Message"
+                  <button type="submit" name="submit" value="Send Message" id="submitButton"
                     class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                     type="button" style="transition: all 0.15s ease 0s;">
+                    Send Message
+                  </button>
                 </div>
               </div>
             </div>
