@@ -6,21 +6,18 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
-const submitButton = document.getElementById("submit");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 const errorMsg = document.getElementById("errorMsg");
 const successMsg = document.getElementById("thank_you");
 
-submitButton.addEventListener('click', function (e) {
-  e.preventDefault();
-
+const msgCheck = () => {
   if (fullName.value === "" || email.value === "" || message.value === "") {
-    successMsg.style.display = 'none';
-    errorMsg.style.display = 'block';
+    successMsg.style.display = "none";
+    errorMsg.style.display = "block";
   } else {
-    errorMsg.style.display = 'none';
-    successMsg.style.display = 'block';
+    errorMsg.style.display = "none";
+    successMsg.style.display = "block";
   }
-});
+};
